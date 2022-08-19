@@ -1,0 +1,542 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Source/Trempoline_artefacts/Debug/VST3/Trempoline - Debug.vst3/Contents/x86_64-win/Trempoline - Debug.vst3"
+		},
+		{
+			"path" : "Source/Trempoline_artefacts/Debug/VST3/Trempoline - Debug.pdb"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_juce_link_plugin_wrapper",
+			"_juce_configure_plugin_targets",
+			"juce_add_plugin",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"build/x64-Debug/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake",
+			"Source/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1806,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1261,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1078,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 1091,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1088,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MTd"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Od"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/Zi"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/EHsc"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/W4"
+				},
+				{
+					"fragment" : "-std:c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "DEBUG=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_processors=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_audio_utils=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_core=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_data_structures=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_dsp=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_events=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_graphics=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_gui_basics=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_MODULE_AVAILABLE_juce_gui_extra=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_USE_CURL=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_VST3_CAN_REPLACE_VST2=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JUCE_WEB_BROWSER=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AAXCategory=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AAXDisableBypass=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AAXDisableMultiMono=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AAXIdentifier=com.IH Pedals.Trempoline"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AAXProductId=JucePlugin_PluginCode"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_ARACompatibleArchiveIDs=\"\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_ARAContentTypes=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_ARADocumentArchiveID=\"com.IH Pedals.Trempoline.aradocumentarchive.1\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_ARAFactoryID=\"com.IH Pedals.Trempoline.arafactory.0.1\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_ARATransformationFlags=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AUExportPrefix=Trempoline___DebugAU"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AUExportPrefixQuoted=\"Trempoline___DebugAU\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AUMainType='aufx'"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_AUSubType=JucePlugin_PluginCode"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Build_AAX=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Build_AU=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Build_AUv3=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Build_LV2=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Build_Standalone=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Build_Unity=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Build_VST3=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Build_VST=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_CFBundleIdentifier=com.IH Pedals.Trempoline"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Desc=\"Trempoline - Debug\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_EditorRequiresKeyboardFocus=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Enable_ARA=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_IsMidiEffect=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_IsSynth=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Manufacturer=\"IH Pedals\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_ManufacturerCode=0x49487064"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_ManufacturerEmail=\"\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_ManufacturerWebsite=\"\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Name=\"Trempoline - Debug\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_PluginCode=0x74726d70"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_ProducesMidiOutput=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_VSTCategory=kPlugCategEffect"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_VSTNumMidiInputs=16"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_VSTNumMidiOutputs=16"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_VSTUniqueID=JucePlugin_PluginCode"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Version=0.1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_VersionCode=0x100"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_VersionString=\"0.1\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_Vst3Category=\"Fx\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "JucePlugin_WantsMidiInput=0"
+				},
+				{
+					"define" : "Trempoline_VST3_EXPORTS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_DEBUG=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/Source/Trempoline_artefacts/JuceLibraryCode"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules/juce_audio_processors/format_types/VST3_SDK"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules/juce_audio_processors/format_types/LV2_SDK"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules/juce_audio_processors/format_types/LV2_SDK/lv2"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules/juce_audio_processors/format_types/LV2_SDK/serd"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules/juce_audio_processors/format_types/LV2_SDK/sord"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules/juce_audio_processors/format_types/LV2_SDK/sord/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules/juce_audio_processors/format_types/LV2_SDK/sratom"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules/juce_audio_processors/format_types/LV2_SDK/lilv"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-src/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "Trempoline::@43690dd2fb94c8e45e84"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Trempoline"
+	},
+	"id" : "Trempoline_VST3::@43690dd2fb94c8e45e84",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "\"Source\\Trempoline_artefacts\\Debug\\Trempoline - Debug_SharedCode.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Trempoline_VST3",
+	"nameOnDisk" : "Trempoline - Debug.vst3",
+	"paths" : 
+	{
+		"build" : "Source",
+		"source" : "Source"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "JUCE Modules\\juce_audio_plugin_client",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "build/x64-Debug/_deps/juce-src/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "build/x64-Debug/_deps/juce-src/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "build/x64-Debug/_deps/juce-src/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "build/x64-Debug/_deps/juce-src/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "build/x64-Debug/_deps/juce-src/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "build/x64-Debug/_deps/juce-src/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "build/x64-Debug/_deps/juce-src/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

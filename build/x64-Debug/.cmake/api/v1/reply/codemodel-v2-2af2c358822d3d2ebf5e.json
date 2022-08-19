@@ -1,0 +1,217 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "_deps/juce-build",
+					"childIndexes" : 
+					[
+						2,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.juce-build-Debug-918e78292ed363449e16.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/x64-Debug/_deps/juce-src"
+				},
+				{
+					"build" : "_deps/juce-build/modules",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.juce-build.modules-Debug-09227681327e269230c4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "build/x64-Debug/_deps/juce-src/modules"
+				},
+				{
+					"build" : "_deps/juce-build/modules/juce_audio_plugin_client",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.juce-build.modules.juce_audio_plugin_client-Debug-b0ce5a2cdd9071a3b00b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "build/x64-Debug/_deps/juce-src/modules/juce_audio_plugin_client",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "_deps/juce-build/extras/Build",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.juce-build.extras.Build-Debug-93472b9e3f16c719ab96.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "build/x64-Debug/_deps/juce-src/extras/Build"
+				},
+				{
+					"build" : "_deps/juce-build/extras/Build/juceaide",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.juce-build.extras.Build.juceaide-Debug-e3558e6d871e974d423e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 1,
+					"source" : "build/x64-Debug/_deps/juce-src/extras/Build/juceaide"
+				},
+				{
+					"build" : "Source",
+					"jsonFile" : "directory-Source-Debug-93ebefb0dc4084c9ccf4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Source",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Trempoline"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "JUCE",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "ReFerbIsh",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 6,
+					"id" : "Trempoline::@43690dd2fb94c8e45e84",
+					"jsonFile" : "target-Trempoline-Debug-f61269c620432e00bb08.json",
+					"name" : "Trempoline",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "Trempoline_All::@43690dd2fb94c8e45e84",
+					"jsonFile" : "target-Trempoline_All-Debug-28697122f48d3d885c4c.json",
+					"name" : "Trempoline_All",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "Trempoline_Standalone::@43690dd2fb94c8e45e84",
+					"jsonFile" : "target-Trempoline_Standalone-Debug-962535c0cacc4a7a2936.json",
+					"name" : "Trempoline_Standalone",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "Trempoline_VST3::@43690dd2fb94c8e45e84",
+					"jsonFile" : "target-Trempoline_VST3-Debug-9c92b40700d91a4b9e67.json",
+					"name" : "Trempoline_VST3",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "juce_lv2_helper::@7a7cbe04e676a8227566",
+					"jsonFile" : "target-juce_lv2_helper-Debug-e316320433728d31dbf5.json",
+					"name" : "juce_lv2_helper",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug",
+		"source" : "D:/Practice Apps/AudioPluginsDev/Trempoline"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

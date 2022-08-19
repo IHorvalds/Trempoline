@@ -1,0 +1,83 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/x64-Debug/_deps/juce-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 150,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 169,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/JUCE-7.0.2",
+			"paths" : 
+			[
+				"build/x64-Debug/_deps/juce-build/JUCEConfigVersion.cmake",
+				"build/x64-Debug/_deps/juce-build/JUCEConfig.cmake",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/JUCECheckAtomic.cmake",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/JUCEHelperTargets.cmake",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/JUCEModuleSupport.cmake",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/JUCEUtils.cmake",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/JuceLV2Defines.h.in",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/LaunchScreen.storyboard",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/PIPAudioProcessor.cpp.in",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/PIPAudioProcessorWithARA.cpp.in",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/PIPComponent.cpp.in",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/PIPConsole.cpp.in",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/RecentFilesMenuTemplate.nib",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/UnityPluginGUIScript.cs.in",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/checkBundleSigning.cmake",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/copyDir.cmake",
+				"build/x64-Debug/_deps/juce-src/extras/Build/CMake/juce_runtime_arch_detection.cpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/JUCE-7.0.2",
+			"exportName" : "LV2_HELPER",
+			"exportTargets" : 
+			[
+				{
+					"id" : "juce_lv2_helper::@7a7cbe04e676a8227566",
+					"index" : 4
+				}
+			],
+			"paths" : 
+			[
+				"_deps/juce-build/CMakeFiles/Export/lib/cmake/JUCE-7.0.2/LV2_HELPER.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/juce-build",
+		"source" : "build/x64-Debug/_deps/juce-src"
+	}
+}

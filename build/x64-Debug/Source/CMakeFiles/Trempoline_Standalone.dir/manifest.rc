@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/Source/CMakeFiles/Trempoline_Standalone.dir/embed.manifest"
