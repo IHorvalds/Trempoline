@@ -2,7 +2,7 @@
 
 *A tiny, dumb-simple tremolo effect.*
 
-![image](https://user-images.githubusercontent.com/22452178/185718394-96cb6eb0-72e6-4f6c-af2b-cc31941e49bc.png)
+![image](https://user-images.githubusercontent.com/22452178/185722674-f4feaa65-3ac6-4c54-bbef-4c9fe0caf814.png)
 
 
 For when you want your signal to go like this
