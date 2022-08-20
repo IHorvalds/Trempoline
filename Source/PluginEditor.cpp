@@ -54,7 +54,6 @@ void TrempolineProcessorEditor::paint (juce::Graphics& g)
     g.setColour(Colours::aliceblue);
 
     controlsArea.reduce(28, 22);
-    //g.drawRect(controlsArea);
 
 
     constexpr float controlsToTitleRatio = 238.f / 289.f;
@@ -100,7 +99,7 @@ void TrempolineProcessorEditor::resized()
     constexpr float controlsToTitleRatio = 238.f / 289.f;
 
     // Title area
-    controlsArea.removeFromBottom(static_cast<int>(controlsArea.getHeight() * (1.f - controlsToTitleRatio)));
+    auto titleArea = controlsArea.removeFromBottom(static_cast<int>(controlsArea.getHeight() * (1.f - controlsToTitleRatio)));
 
     // Controls Area
     controlsArea.removeFromBottom(controlsArea.getHeight() * 0.0688); // padding
@@ -150,8 +149,11 @@ void TrempolineProcessorEditor::resized()
     driveSlider.rightLabel = { std::make_unique<String>("3"), nullptr };
     driveSlider.setBounds(bottomRow.removeFromLeft(bottomRow.getWidth() * 0.5f));
 
-    bottomRow.reduce(bottomRow.getWidth() * 0.25f, bottomRow.getHeight() * 0.25f);
-    bypassButton.setBounds(bottomRow);
+    float titleHeight = this->getHeight() * 0.1107f;
+    auto bypassButtonArea = Rectangle<int>(0, 0, (float)titleHeight, (float)titleHeight);
+    bypassButtonArea.setCentre(titleArea.getCentreX(), 0);
+    bypassButtonArea.setY(titleArea.getPosition().y + this->getHeight() * 0.0834f);
+    bypassButton.setBounds(bypassButtonArea);
 
     makeupSlider.lineThickness = this->getHeight() * 0.0138f;;
     makeupSlider.buttonDiameter = this->getHeight() * 0.0484f;

@@ -3,7 +3,7 @@ project(Trempoline VERSION 0.0.1)
 set (BaseTargetName Trempoline)
 
 juce_add_plugin("${BaseTargetName}"
-        VERSION "0.0.1"
+        VERSION "1.0"
         COMPANY_NAME "IH Pedals"
         IS_SYNTH FALSE
         NEEDS_MIDI_INPUT FALSE
@@ -41,7 +41,7 @@ target_sources(${BaseTargetName} PRIVATE
         UI/VerticalSlider.cpp
         UI/BypassButton.cpp
         
-        "DSP/Utils.h"
+        DSP/Utils.h
         DSP/Tremolo.h
         DSP/Tremolo.cpp)
 

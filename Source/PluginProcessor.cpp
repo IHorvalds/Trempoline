@@ -155,7 +155,7 @@ void TrempolineProcessor::processBlock (juce::AudioBuffer<float>& buffer,
 
     // is it bypassed?
     bool bypassed = m_apvts.getParameterAsValue(BYPASS_PARAM).getValue();
-    if (bypassed)
+    if (!bypassed)
     {
         m_makeupProcessor.setGainDecibels(m_smoothedMakeupGain.getNextValue());
     
@@ -213,17 +213,17 @@ APVTS::ParameterLayout TrempolineProcessor::createParameterLayout()
 {
     APVTS::ParameterLayout layout = APVTS::ParameterLayout();
 
-    layout.add(std::make_unique<juce::AudioParameterBool>(BYPASS_PARAM, BYPASS_PARAM, true));
+    layout.add(std::make_unique<juce::AudioParameterBool>(BYPASS_PARAM, BYPASS_PARAM, false));
 
     layout.add(std::make_unique<juce::AudioParameterFloat>(SPEED_PARAM, SPEED_PARAM, juce::NormalisableRange<float>(0.1f, 10.f, 0.05f), 0.5f));
 
-    layout.add(std::make_unique<juce::AudioParameterFloat>(DEPTH_PARAM, DEPTH_PARAM, juce::NormalisableRange<float>(0.1f, 1.f, 0.05f), 0.4f));
+    layout.add(std::make_unique<juce::AudioParameterFloat>(DEPTH_PARAM, DEPTH_PARAM, juce::NormalisableRange<float>(0.1f, 1.f, 0.01f), 0.4f));
 
     layout.add(std::make_unique<juce::AudioParameterFloat>(SHAPE_PARAM, SHAPE_PARAM, juce::NormalisableRange<float>(0.f, 1.f, 0.01f), 0.99f));
 
-    layout.add(std::make_unique<juce::AudioParameterFloat>(DRIVE_PARAM, DRIVE_PARAM, juce::NormalisableRange<float>(0.1f, 30.f, 0.1f), 1.f));
+    layout.add(std::make_unique<juce::AudioParameterFloat>(DRIVE_PARAM, DRIVE_PARAM, juce::NormalisableRange<float>(0.1f, 30.f, 0.01f), 1.f));
 
-    layout.add(std::make_unique<juce::AudioParameterFloat>(MAKEUP_PARAM, MAKEUP_PARAM, juce::NormalisableRange<float>(-50.f, 6.f, 0.1f, 3.6f), 0.f));
+    layout.add(std::make_unique<juce::AudioParameterFloat>(MAKEUP_PARAM, MAKEUP_PARAM, juce::NormalisableRange<float>(-50.f, 6.f, 0.01f, 3.6f), 0.f));
 
     return layout;
 }

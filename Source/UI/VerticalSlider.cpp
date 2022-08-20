@@ -28,7 +28,7 @@ void BigVerticalSlider::paint(Graphics& g)
     int padding = 4;
     sliderArea.removeFromBottom(this->textHeight + padding);
     auto controlArea = sliderArea;
-    controlArea.removeFromTop(padding);
+    controlArea.removeFromTop(padding + (int)(this->buttonDiameter) / 2);
 
     // slider line
     Line<float> line(Point<float>(controlArea.getCentreX(), controlArea.getY()), Point<float>(controlArea.getCentreX(), controlArea.getBottom()));
@@ -61,7 +61,7 @@ void BigVerticalSlider::paint(Graphics& g)
 
     buttonArea.setCentre(controlArea.getCentreX(), sliderCentrePosition);
 
-    g.setColour(Colours::grey);
+    g.setColour(Colours::white);
     g.fillEllipse(buttonArea);
 }
 

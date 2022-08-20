@@ -25,7 +25,7 @@ void BypassButton::paintButton(juce::Graphics& g, bool shouldDrawButtonAsHighlig
     float size = jmin(bounds.getWidth(), bounds.getHeight());
     p.addEllipse(bounds.getCentreX() - size / 2.f, bounds.getCentreY() - size / 2.f, size, size);
 
-    g.setColour(this->getToggleState() ? this->m_onColour : this->m_offColour);
+    g.setColour(this->getToggleState() ? this->m_offColour : this->m_onColour);
     g.fillPath(p);
 
 }
