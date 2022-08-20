@@ -1,2 +1,0 @@
-#pragma code_page(65001)
-1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-build/tools/modules/juce_audio_plugin_client/CMakeFiles/juce_lv2_helper.dir/embed.manifest"

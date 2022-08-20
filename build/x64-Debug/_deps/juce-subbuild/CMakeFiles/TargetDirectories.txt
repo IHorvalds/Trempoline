@@ -1,3 +1,0 @@
-D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-subbuild/CMakeFiles/juce-populate.dir
-D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-subbuild/CMakeFiles/edit_cache.dir
-D:/Practice Apps/AudioPluginsDev/Trempoline/build/x64-Debug/_deps/juce-subbuild/CMakeFiles/rebuild_cache.dir
