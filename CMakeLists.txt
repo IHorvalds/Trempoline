@@ -4,11 +4,17 @@ set(CMAKE_CXX_STANDARD 17)
 
 #including CPM.cmake, a package manager:
 #https://github.com/TheLartians/CPM.cmake
-include(CMake/CPM.cmake)
+include(cmake/CPM.cmake)
 
 #Compile commands, useful for some IDEs like VS-Code
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
+# Build LV2 only on Linux
+if (UNIX AND NOT APPLE)
+    message(STATUS "Building LV2 plugin format")
+    set( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -fPIC" )
+    set( CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -Wall -fPIC" )
+endif ()
 #Minimum MacOS target, set globally
 
 if (${CMAKE_SYSTEM_NAME} STREQUAL "iOS")

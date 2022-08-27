@@ -13,7 +13,7 @@ juce_add_plugin("${BaseTargetName}"
         COPY_PLUGIN_AFTER_BUILD TRUE
         PLUGIN_MANUFACTURER_CODE IHpd
         PLUGIN_CODE Trmp
-        FORMATS AU VST3 Standalone
+        FORMATS LV2 AU VST3 Standalone
         PRODUCT_NAME "Trempoline Tremolo")
 
 juce_generate_juce_header(${BaseTargetName})

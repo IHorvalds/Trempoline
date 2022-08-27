@@ -175,7 +175,7 @@ void TrempolineProcessor::processBlock (juce::AudioBuffer<float>& buffer,
                 inputs[channel][sample] += m_waveShaper.processSample(inputs[channel][sample] * m_smoothedDrive.getNextValue());
                 inputs[channel][sample] *= 0.5f;
 
-                inputs[channel][sample] *= m_makeupProcessor.processSample(inputs[channel][sample]);
+                inputs[channel][sample] = m_makeupProcessor.processSample(inputs[channel][sample]);
             }
         }
     }
