@@ -21,9 +21,12 @@ juce_generate_juce_header(${BaseTargetName})
 juce_add_binary_data("${BaseTargetName}Binaries"
     NAMESPACE assets
         SOURCES
-            Assets/Images/big_sine.png
-            Assets/Images/small_sine.png
-            Assets/Images/triangle.png
+            Assets/Images/big_ui.png
+            Assets/Images/depth_stitched.png
+            Assets/Images/drive_stitched.png
+            Assets/Images/shape_stitched.png
+            Assets/Images/freq_stitched.png
+            Assets/Images/volume_stitched.png
     )
 
 target_sources(${BaseTargetName} PRIVATE
@@ -33,13 +36,8 @@ target_sources(${BaseTargetName} PRIVATE
         PluginEditor.h
         Parameters.h 
         
-        UI/TrempolineLookAndFeel.h
-        UI/TrempolineLookAndFeel.cpp
-        UI/BigRotarySlider.h
-        UI/BigRotarySlider.cpp
-        UI/VerticalSlider.h
-        UI/VerticalSlider.cpp
-        UI/BypassButton.cpp
+        UI/ImageSlider.h
+        UI/ImageSlider.cpp
         
         DSP/Utils.h
         DSP/Tremolo.h

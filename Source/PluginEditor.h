@@ -1,10 +1,7 @@
 #pragma once
 
 #include "PluginProcessor.h"
-#include "UI/BigRotarySlider.h"
-#include "UI/VerticalSlider.h"
-#include "UI/BypassButton.h"
-#include "UI/TrempolineLookAndFeel.h"
+#include "UI/ImageSlider.h"
 
 //==============================================================================
 class TrempolineProcessorEditor  : public juce::AudioProcessorEditor
@@ -28,16 +25,14 @@ private:
     using SliderAttachment = APVTS::SliderAttachment;
     using ButtonAttachment = APVTS::ButtonAttachment;
 
-    TrempolineLookAndFeel lnf;
-
-    BigRotarySlider speedSlider;
-    BigRotarySlider depthSlider;
-    BigRotarySlider shapeSlider;
-    BigRotarySlider driveSlider;
-    BigVerticalSlider makeupSlider;
+    ImageSlider speedSlider;
+    ImageSlider depthSlider;
+    ImageSlider shapeSlider;
+    ImageSlider driveSlider;
+    ImageSlider makeupSlider;
 
      //bypassButton;
-    BypassButton bypassButton;
+    //BypassButton bypassButton;
 
     SliderAttachment speedSliderAttachment;
     SliderAttachment depthSliderAttachment;
@@ -45,7 +40,7 @@ private:
     SliderAttachment driveSliderAttachment;
     SliderAttachment makeupSliderAttachment;
 
-    ButtonAttachment bypassButtonAttachment;
+    //ButtonAttachment bypassButtonAttachment;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TrempolineProcessorEditor)
 };

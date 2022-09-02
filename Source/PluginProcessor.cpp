@@ -223,7 +223,7 @@ APVTS::ParameterLayout TrempolineProcessor::createParameterLayout()
 
     layout.add(std::make_unique<juce::AudioParameterFloat>(DRIVE_PARAM, DRIVE_PARAM, juce::NormalisableRange<float>(0.1f, 30.f, 0.01f), 1.f));
 
-    layout.add(std::make_unique<juce::AudioParameterFloat>(MAKEUP_PARAM, MAKEUP_PARAM, juce::NormalisableRange<float>(-50.f, 6.f, 0.01f, 3.6f), 0.f));
+    layout.add(std::make_unique<juce::AudioParameterFloat>(MAKEUP_PARAM, MAKEUP_PARAM, juce::NormalisableRange<float>(-50.f, 6.f, 0.01f, 6.5f), 0.f));
 
     return layout;
 }
