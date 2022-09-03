@@ -27,6 +27,8 @@ juce_add_binary_data("${BaseTargetName}Binaries"
             Assets/Images/shape_stitched.png
             Assets/Images/freq_stitched.png
             Assets/Images/volume_stitched.png
+            Assets/Images/button_on_cropped.png
+            Assets/Images/button_off_cropped.png
     )
 
 target_sources(${BaseTargetName} PRIVATE

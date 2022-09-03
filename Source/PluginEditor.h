@@ -32,7 +32,7 @@ private:
     ImageSlider makeupSlider;
 
      //bypassButton;
-    //BypassButton bypassButton;
+    ImageButton bypassButton;
 
     SliderAttachment speedSliderAttachment;
     SliderAttachment depthSliderAttachment;
@@ -40,7 +40,7 @@ private:
     SliderAttachment driveSliderAttachment;
     SliderAttachment makeupSliderAttachment;
 
-    //ButtonAttachment bypassButtonAttachment;
+    ButtonAttachment bypassButtonAttachment;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TrempolineProcessorEditor)
 };
