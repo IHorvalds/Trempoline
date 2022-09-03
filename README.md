@@ -1,8 +1,8 @@
 # Trempoline
 
-*A tiny, dumb-simple tremolo effect.*
+*A tiny, dumb-simple tremolo effect.* <sup>with a ***waaaay*** too heavy interface</sup>
 
-![image](https://user-images.githubusercontent.com/22452178/185722674-f4feaa65-3ac6-4c54-bbef-4c9fe0caf814.png)
+![image](https://user-images.githubusercontent.com/22452178/188287680-46b7724f-a196-4a10-8cbc-6f447f836a47.png)
 
 
 For when you want your signal to go like this
